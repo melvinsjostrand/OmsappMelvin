@@ -1,0 +1,163 @@
+header{
+    width: 100%;
+    h1{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        text-align: center;
+    }
+    
+    .dropdown-content a {
+        color: #333;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    
+    /* Visa dropdown-menyn när knappen klickas */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+#index{
+   
+}
+
+#account{
+
+}
+#createAccount{
+
+}
+#information{
+
+}
+#joinOrganisation{
+
+}
+#month{
+
+}
+#organisation{
+
+}
+#role{
+
+}
+#uploadInformation{
+
+}
+#week{
+
+}
+
+
+@media only screen and (min-width: 1080px){
+    header{
+        grid-area: head;
+        nav{
+            width: 100%;
+            height: 100%;
+            ul{
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                place-content: center;
+                margin: 0;
+                padding: 0;
+                li{
+                    
+                    border: 2px solid black;
+                    border-radius: 20px;
+                    box-shadow: 1px 1px 1px 2px;
+                    padding: 0.5em;
+                    border-collapse: collapse;
+                    background-color: white;
+                    text-align: center;
+                    margin: 0 15px 0 15px;
+                    font-size: 0.9em;
+                    a{
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        font-size: 1.5em;
+                        margin: 0;
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+#index{
+    body{
+        height: 100vh;
+        width: 97vh;
+    }
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 100px auto;
+        grid-template-areas: 
+        ". head head"
+        "div main main";
+        width: 100%;
+        height: 100%;
+
+        div{
+            grid-area: div;
+            background-color: var(--nav-color);
+            height:30%;
+            border-radius: 50px;
+            width: 70%;
+            margin:0 auto;
+            height: 50vh;
+        }
+        main{
+            grid-area: main;
+        }
+    }
+}
+
+#account{
+
+}
+#createAccount{
+
+}
+#information{
+
+}
+#joinOrganisation{
+
+}
+#month{
+
+}
+#organisation{
+
+}
+#role{
+
+}
+#uploadInformation{
+
+}
+#week{
+
+}
+
+}
