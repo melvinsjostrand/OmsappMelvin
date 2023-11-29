@@ -35,6 +35,7 @@ header .dropdown:hover .dropdown-content {
     grid-area: head;
   }
   header nav {
+    display: block;
     width: 100%;
     height: 100%;
   }
@@ -46,6 +47,7 @@ header .dropdown:hover .dropdown-content {
     place-content: center;
     margin: 0;
     padding: 0;
+    list-style-type: none;
   }
   header nav ul li {
     border: 2px solid black;
@@ -67,6 +69,9 @@ header .dropdown:hover .dropdown-content {
     color: black;
     text-decoration: none;
   }
+  header div {
+    display: none;
+  }
   #index body {
     height: 100vh;
     width: 97vh;
@@ -74,12 +79,12 @@ header .dropdown:hover .dropdown-content {
   #index .wrapper {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 100px auto;
-    grid-template-areas: ". head head" "div main main";
+    grid-template-rows: 100px auto auto;
+    grid-template-areas: ". head head" "div main main" ". . button";
     width: 100%;
     height: 100%;
   }
-  #index .wrapper div {
+  #index .wrapper div:nth-child(2) {
     grid-area: div;
     background-color: var(--nav-color);
     height: 30%;
@@ -89,6 +94,25 @@ header .dropdown:hover .dropdown-content {
     height: 50vh;
   }
   #index .wrapper main {
+    display: grid;
     grid-area: main;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+  #index .wrapper main section {
+    border-width: 2em;
+    border-radius: 50px;
+    width: 90%;
+    text-align: center;
+    background-color: var(--org1--color);
+    cursor: pointer;
+    height: 40%;
+  }
+  #index .wrapper main section p {
+    justify-content: center;
+    align-items: center;
+  }
+  #index .wrapper div:nth-child(4) {
+    grid-area: button;
   }
 }/*# sourceMappingURL=style.css.map */

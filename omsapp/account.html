@@ -4,34 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="account.js" defer></script>
     <title>omsApp</title>
 </head>
 <body>
     <div class="wrapper">
-    <header>
-        <h1>
-
-        </h1>
-        <nav>
-            <ul>
-                <li>
-                    <a  href="index.html">Aktiviteter</a>
-                </li>
-                <li>
-                    <a  href="week.html">Vecka</a>
-                </li>
-                <li>
-                    <a  href="month.html">Månad</a>
-                </li>
-                <li>
-                    <a href="logout.html">logga ut</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-
-    </main>
+        <header>
+            <h1>
+                Kontosida
+            </h1>
+            <nav>
+                <ul id="mainheader">
+                    <li id="activities">
+                        <a  href="index.html">Aktiviteter</a>
+                    </li>
+                    <li id="week">
+                        <a  href="week.html">Vecka</a>
+                    </li>
+                    <li id="month">
+                        <a  href="month.html">Månad</a>
+                    </li>
+                    <li id="account">
+    
+                    </li>
+                </ul>
+            
+            </nav>
+        </header>
+            <main id="myPopup" class="wrapper">
+                <section class="form-box login">
+                    <h2>Login<span id="error"></span></h2>
+                    <form action="#">
+                        <p class="input-box">
+                            <label for="account" >Email/Telefonnummer</label>
+                            <input type="text" name="account" id="account" required>
+                        </p>
+                        <p class="input-box">
+                            <label for="password" >Lösenord</label>
+                            <input type="password" name="password" id="password" required>
+                        </p>
+                        <button type="submit" class="btn" name="login" value="login">Logga in</button>
+                        <div class="login-register">
+                            <p>Har du inte ett konto?
+                                <a class="register-link" href="createaccount.html">Skapa konto</a>
+                            </p>
+                        </div>
+                    </form>
+                </section>
+            </main>
 </div>
 </body>
 </html>
