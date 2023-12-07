@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>omsApp</title>
 </head>
-<body>
+<body id="createAccount">
     <div class="wrapper">
     <header>
         <h1>
@@ -30,7 +30,42 @@
         </nav>
     </header>
     <main>
-
+        <h2>Skapa konto</h2>
+        <section class="form-box register">
+            <form action="#">
+                <p>Ange antingen Email och/eller Telefonnummer</p>
+                <p>
+                    <label for="createaccusername">Användarnamn Frivilligt</label><br>
+                    <input type="text" name="createaccusername" id="createaccusername" required>
+                </p>
+                <p class="input-box">
+                    <label for="createaccemail" >Email</label><br>
+                    <input type="email" name="createaccemail" id="createaccemail">
+                </p>
+                <p class="input-box">
+                    <label for="createaccphonenumber" >Telefonnummer</label><br>
+                    <input type="tel" name="createaccphonenumber" id="createaccphonenumber">
+                </p>
+                <p class="input-box">
+                    <label for="createaccpassword" >Lösenord *Obligatoriskt</label><br>
+                    <input type="password" name="createaccpassword" id="createaccpassword" required>
+                    <span id="togglePassword1">&#x1F441;</span>
+                </p>
+                <p class="input-box">
+                    <label for="repeatpassword">Upprepa lösenord *Obligatoriskt</label><br>
+                    <input type="password" name="repeatpassword" id="repeatpassword" required>
+                    <span id="togglePassword2">&#x1F441;</span><br>
+                    <span id="errorPasswordMessage"></span>
+                </p>
+    
+                <button type="submit">Registrera Konto</button>
+                <div class="login-register">
+                    <p>Har du redan ett konto?<br>
+                        <a class="login-link" href="account.html">Logga in</a>
+                    </p>
+                </div>
+            </form>
+        </section>
     </main>
 </div>
 </body>

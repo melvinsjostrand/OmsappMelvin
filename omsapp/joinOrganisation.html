@@ -30,7 +30,23 @@
         </nav>
     </header>
     <main>
-
+        <section class="form-box login">
+            <h2>Gå med i organisation <span id="error"></span>
+            </h2>
+            <form action="#">
+                <p class="input-box">
+                    <label for="account" >Organisations nyckel</label>
+                    <input type="text" name="account" id="account" required>
+                </p>
+                <p class="input-box">
+                    <label for="password" >Favorit</label>
+                    <input type="checkbox" name="password" id="password" value = "yes">
+                </p>
+                <button id="send" type="submit" class="btn" name="login" value="login">Gå med</button>
+                <div class="login-register">
+                </div>
+            </form>
+        </section>
     </main>
 </div>
 </body>

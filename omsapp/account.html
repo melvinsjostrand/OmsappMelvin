@@ -7,51 +7,64 @@
     <script src="account.js" defer></script>
     <title>omsApp</title>
 </head>
-<body>
+<body id="account">
     <div class="wrapper">
         <header>
             <h1>
-                Kontosida
+    
             </h1>
             <nav>
-                <ul id="mainheader">
-                    <li id="activities">
+                <ul>
+                    <li>
                         <a  href="index.html">Aktiviteter</a>
                     </li>
-                    <li id="week">
+                    <li>
                         <a  href="week.html">Vecka</a>
                     </li>
-                    <li id="month">
+                    <li>
                         <a  href="month.html">Månad</a>
                     </li>
-                    <li id="account">
-    
+                    <li>
+                        <a href="logout.html">logga ut</a>
                     </li>
                 </ul>
-            
             </nav>
+            <div class="dropdown">
+                <button class="dropdown-btn">Meny</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Aktiviteter</a>
+                    <a href="week.html">Vecka</a>
+                    <a href="month.html">Månad</a>
+                    <a href="logout.html">Logga ut</a>
+                </div>
+            </div>
+            <span id="error"></span>
         </header>
-            <main id="myPopup" class="wrapper">
-                <section class="form-box login">
-                    <h2>Login<span id="error"></span></h2>
+        <main id="myPopup">
+            <img src="./image/logo.png">
+            <h2>Logga in</h2>
+            <section>
+                <div>
                     <form action="#">
-                        <p class="input-box">
-                            <label for="account" >Email/Telefonnummer</label>
-                            <input type="text" name="account" id="account" required>
+                        <p>
+                            <label for="account" >Email/Telefonnummer:</label><br>
+                            <input type="text" name="account" required>
                         </p>
                         <p class="input-box">
-                            <label for="password" >Lösenord</label>
-                            <input type="password" name="password" id="password" required>
+                            <label for="password" >Lösenord:</label><br>
+                            <input type="password" name="password" required>
+                            <span id="togglePassword">&#x1F441;</span>
                         </p>
-                        <button type="submit" class="btn" name="login" value="login">Logga in</button>
-                        <div class="login-register">
-                            <p>Har du inte ett konto?
-                                <a class="register-link" href="createaccount.html">Skapa konto</a>
+                        <button type="submit" name="login" value="login">Logga in</button>
+                        <div>
+                            <p>Har du inte ett konto?<br>
+                                <a href="createaccount.html">Skapa konto</a>
                             </p>
                         </div>
                     </form>
-                </section>
-            </main>
+                </div>
+            </section>
+        </main>
 </div>
 </body>
 </html>

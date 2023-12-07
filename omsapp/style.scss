@@ -1,189 +1,361 @@
-header{
+header {
     width: 100%;
-    h1{
-        display: none;
+    h1 {
+      display: none;
     }
-    nav{
-        display: none;
+    nav {
+      display: none;
+    }
+    .dropdown-btn {
+      width: 97vw;
+      height: 50px;
+      font-size: 2em;
+      border: none;
+      cursor: pointer;
+      border: 2px solid black;
+      border-radius: 20px;
+      font-weight: bold;
+      background-color: white;
     }
     .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        text-align: center;
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      text-align: center;
     }
-    
+  
     .dropdown-content a {
-        color: #333;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
     }
-    
+  
     .dropdown-content a:hover {
-        background-color: #ddd;
+      background-color: #ddd;
     }
-    
+  
     /* Visa dropdown-menyn när knappen klickas */
     .dropdown:hover .dropdown-content {
-        display: block;
+      display: block;
     }
-}
-#index{
-   
-}
-
-#account{
-
-}
-#createAccount{
-
-}
-#information{
-
-}
-#joinOrganisation{
-
-}
-#month{
-
-}
-#organisation{
-
-}
-#role{
-
-}
-#uploadInformation{
-
-}
-#week{
-
-}
-
-
-@media only screen and (min-width: 1080px){
-    header{
-        grid-area: head;
-        nav{
-            display: block;
-            width: 100%;
-            height: 100%;
-            ul{
-                width: 100%;
-                height: 100%;
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                place-content: center;
-                margin: 0;
-                padding: 0;
-                list-style-type: none;
-                li{
-                    
-                    border: 2px solid black;
-                    border-radius: 20px;
-                    box-shadow: 1px 1px 1px 2px;
-                    padding: 0.5em;
-                    border-collapse: collapse;
-                    background-color: white;
-                    text-align: center;
-                    margin: 0 15px 0 15px;
-                    font-size: 0.9em;
-                    a{
-                        width: 100%;
-                        height: 100%;
-                        display: block;
-                        font-size: 1.5em;
-                        margin: 0;
-                        color: black;
-                        text-decoration: none;
-                    }
-                }
+  }
+  #index {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--web--color);
+    div:nth-child(3) {
+      display: none;
+    }
+    main {
+      display: flex;
+      flex-direction: row wrap;
+      justify-items: center;
+      gap: 2em;
+      font-size: 2em;
+      grid-auto-rows: minmax(250px, auto);
+      section {
+        border-width: 2em;
+        border-radius: 50px;
+        width: 90%;
+        text-align: center;
+        cursor: pointer;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
+  }
+  
+  #account {
+    header {
+      display: none;
+    }
+    background-image: linear-gradient(to right, #90f7f2, #fbf8b7);
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    .wrapper {
+      img {
+        height: 125px;
+        width: 280px;
+      }
+      h2 {
+        text-align: center;
+        font-size: 1.5em;
+      }
+      form {
+        p {
+          font-size: 1.25em;
+        }
+        p:nth-child(1) {
+          span {
+            font-size: 2.5em;
+            color: black;
+            cursor: pointer;
+          }
+        }
+        input {
+          font-size: 1em;
+          height: 30px;
+          width: 225px;
+        }
+        button {
+          width: 230px;
+          height: 40px;
+          background-color: rgb(194, 194, 194);
+          font-size: 1em;
+          box-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
+          border-radius: 40px 40px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+        div {
+          p {
+            a {
+              text-decoration: none;
+              color: black;
+              font-weight: bold;
             }
+          }
         }
-        div{
-            display: none;
+      }
+    }
+  }
+  #createAccount {
+    header {
+      display: none;
+    }
+    background-image: linear-gradient(to right, #90f7f2, #fbf8b7);
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    .wrapper {
+      img {
+        height: 125px;
+        width: 280px;
+      }
+      h2 {
+        text-align: center;
+        font-size: 2.5em;
+      }
+      section {
+        text-align: center;
+  
+        form {
+          p {
+            font-size: 1.25em;
+          }
+          p:nth-child(1) {
+            color: black;
+            text-align: center;
+            font-weight: bold;
+          }
+          p:nth-child(2) {
+            span {
+              font-size: 2.5em;
+              color: black;
+              cursor: pointer;
+            }
+          }
+          input {
+            font-size: 1em;
+            height: 30px;
+            width: 225px;
+          }
+          button {
+            width: 230px;
+            height: 40px;
+            background-color: rgb(194, 194, 194);
+            font-size: 1em;
+            box-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
+            border-radius: 40px 40px;
+            font-weight: bold;
+            cursor: pointer;
+          }
+          div {
+            p {
+              a {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+              }
+            }
+          }
         }
+      }
     }
-#index{
-    body{
-        height: 100vh;
-        width: 97vh;
-    }
-    .wrapper{
-        display: grid;
-        grid-template-columns: 1fr 4fr;
-        grid-template-rows: 100px auto auto;
-        grid-template-areas: 
-        ". head head"
-        "div main main"
-        ". . button";
+  }
+  #information {
+    
+  }
+  #joinOrganisation {
+
+  }
+  #month {
+
+  }
+  #organisation {
+
+  }
+  #role {
+
+  }
+  #uploadInformation {
+
+  }
+  #week {
+
+  }
+  
+  @media only screen and (min-width: 1080px) {
+    header {
+      grid-area: head;
+      nav {
+        display: block;
         width: 100%;
         height: 100%;
-
-        div:nth-child(2){
-            grid-area: div;
-            background-color: var(--nav-color);
-            height:30%;
-            border-radius: 50px;
-            width: 70%;
-            margin:0 auto;
-            height: 50vh;
-        }
-        main{
-            display: grid;
-            grid-area: main;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 1fr;
-            section{
-                border-width: 2em;
-                border-radius: 50px;
-                width: 90%;
-                text-align: center;
-                background-color: var(--org1--color);
-                cursor: pointer;
-                height: 40%;
-                p{
-                    justify-content: center;
-                    align-items: center;
-                }
+        ul {
+          width: 100%;
+          height: 100%;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          place-content: center;
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          li {
+            border: 2px solid black;
+            border-radius: 20px;
+            box-shadow: 1px 1px 1px 2px;
+            padding: 0.5em;
+            border-collapse: collapse;
+            background-color: white;
+            text-align: center;
+            margin: 0 15px 0 15px;
+            font-size: 0.9em;
+            a {
+              width: 100%;
+              height: 100%;
+              display: block;
+              font-size: 1.5em;
+              margin: 0;
+              color: black;
+              text-decoration: none;
             }
-
+          }
         }
-        div:nth-child(4){
-            grid-area:button;
-        }
+      }
+      div {
+        display: none;
+      }
     }
-}
-
-#account{
-
-}
-#createAccount{
-
-}
-#information{
-
-}
-#joinOrganisation{
-
-}
-#month{
-
-}
-#organisation{
-
-}
-#role{
-
-}
-#uploadInformation{
-
-}
-#week{
-
-}
-
-}
+    #index {
+      height: 100vh;
+      width: 97vh;
+      .wrapper {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: 100px auto 50px;
+        grid-template-areas:
+          ". head head"
+          "div main main"
+          ". . button";
+        width: 100%;
+        height: 100%;
+  
+        div:nth-child(2) {
+          grid-area: div;
+          background-color: lightgray;
+          height: 30%;
+          border-radius: 50px;
+          width: 70%;
+          margin: 0 auto;
+          height: 50vh;
+          section:nth-child(1) {
+            padding-top: 10px;
+          }
+          section {
+            text-align: center;
+            font-size: 200%;
+          }
+        }
+        main {
+          display: flex;
+          flex-direction: column wrap;
+          column-gap: 10px;
+          grid-area: main;
+          section {
+            border-width: 2em;
+            border-radius: 50px;
+            width: 400px;
+            text-align: center;
+            background-color: var(--org1--color);
+            cursor: pointer;
+            height: 300px;
+            p {
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+        div:nth-child(4) {
+          grid-area: button;
+        }
+      }
+    }
+  
+    #account {
+      .wrapper {
+        main {
+          img {
+            height: 200px;
+            width: 400px;
+          }
+          h2 {
+            font-size: 5em;
+            margin: 0;
+            margin-bottom: 3%;
+          }
+          form {
+            text-align: center;
+            p {
+              font-size: 1.5em;
+            }
+            p:nth-child(1) {
+              span {
+                font-size: 1.5em;
+              }
+            }
+            input {
+              font-size: 0.7em;
+              height: 40px;
+              width: 300px;
+            }
+            span {
+              color: red;
+            }
+          }
+        }
+      }
+    }
+    #createAccount {
+    }
+    #information {
+    }
+    #joinOrganisation {
+    }
+    #month {
+    }
+    #organisation {
+    }
+    #role {
+    }
+    #uploadInformation {
+    }
+    #week {
+    }
+  }
+  

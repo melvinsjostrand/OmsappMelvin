@@ -30,7 +30,22 @@
         </nav>
     </header>
     <main>
+        <a id="back_button" href="./organisation.html"> Gå tillbaka</a>
+        <form action="">
+            <label for="act">Aktivitet</label>
+            <input type="text" id="act" placeholder="Aktivitet" name="act">
+            <label for="location">Plats</label>
+            <input type="text" id="location" placeholder="Plats" name="location">
 
+            <label for="start_time">Starttid</label>
+            <input type="datetime-local" id="start_time" name="start_time">
+
+            <label for="end_time">sluttid</label>
+            <input type="datetime-local" id="end_time" name="end_time">
+
+            <textarea placeholder="Information Om Aktivitet" name="upload_information" id="upload_information"></textarea>
+            <input type="submit" id="upload_button" value="Ladda upp" class="submit">
+        </form>
     </main>
 </div>
 </body>
