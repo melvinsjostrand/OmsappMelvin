@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="information.js" defer></script>
     <title>omsApp</title>
 </head>
-<body>
+<body id="information">
     <div class="wrapper">
     <header>
         <h1>
@@ -28,15 +29,24 @@
                 </li>
             </ul>
         </nav>
+        <div class="dropdown">
+            <button class="dropdown-btn">Meny</button>
+            <div class="dropdown-content">
+                <a href="index.html">Aktiviteter</a>
+                <a href="week.html">Vecka</a>
+                <a href="month.html">Månad</a>
+                <a href="logout.html">Logga ut</a>
+            </div>
+        </div>
     </header>
     <main>
-        <a id='back_button' href="javascript:history.back()">Gå tillbaka</a>
-        <section class="gridsection">
-            <h2 id="day"></h2>
-            <div class="Dag-Infokalender">
+        <a href="javascript:history.back()">Gå tillbaka</a>
+        <section>
+            <h2></h2>
+            <div>
             </div>
           </section>
-          <div class="gridsection2">
+          <div>
             
         </div>
     </main>

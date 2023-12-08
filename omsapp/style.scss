@@ -189,7 +189,51 @@ header {
     }
   }
   #information {
-    
+    .wrapper{
+      main{
+        margin-top: 3rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        section{
+          div{
+            display: none;
+          }
+        }
+        p{
+          font-size: 2em;
+        }
+        h2{
+          font-size: 2em;
+        }
+        h3{
+          font-size: 2em;
+        }
+        div:nth-child(3){
+          grid-row: 1/4;
+          grid-column: 2;
+          margin-left: 20px;
+          border-color: black;
+          border-style: solid;
+          border-width: 3px;
+          position: relative;
+          background-color: gray;
+          padding: 1rem;
+          overflow: auto;
+        }
+        a{
+          place-content: center;
+          background-color: rgb(211, 210, 210);
+          color: black;
+          border-style: solid;
+          border-width: 2px;;
+          place-self: center;
+          margin-bottom: 1rem;
+          font-size: 2rem;
+          text-align: center;
+          display: grid;
+        }
+      }
+    }
   }
   #joinOrganisation {
 
@@ -344,6 +388,35 @@ header {
     #createAccount {
     }
     #information {
+      .wrapper{
+        main{
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-template-columns: 25% 60%;
+          grid-template-areas: 
+          "back maintext"
+          "sidetext maintext"
+          ". maintext";
+          display: grid;
+          width: 100vw;
+          height: 80vh;
+          a{
+            grid-area: back;
+          }
+          section{
+            grid-area: sidetext;
+            div{
+            
+              display: block;
+              border-color: black;
+              border-style: solid;
+              border-width: 3px;
+            }
+            div:nth-child(3){
+              grid-area: maintext;
+            }
+          }
+        }
+      }
     }
     #joinOrganisation {
     }

@@ -168,6 +168,48 @@ header .dropdown:hover .dropdown-content {
   font-weight: bold;
 }
 
+#information .wrapper main {
+  margin-top: 3rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+}
+#information .wrapper main section div {
+  display: none;
+}
+#information .wrapper main p {
+  font-size: 2em;
+}
+#information .wrapper main h2 {
+  font-size: 2em;
+}
+#information .wrapper main h3 {
+  font-size: 2em;
+}
+#information .wrapper main div:nth-child(3) {
+  grid-row: 1/4;
+  grid-column: 2;
+  margin-left: 20px;
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+  position: relative;
+  background-color: gray;
+  padding: 1rem;
+  overflow: auto;
+}
+#information .wrapper main a {
+  place-content: center;
+  background-color: rgb(211, 210, 210);
+  color: black;
+  border-style: solid;
+  border-width: 2px;
+  place-self: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  display: grid;
+}
+
 @media only screen and (min-width: 1080px) {
   header {
     grid-area: head;
@@ -286,5 +328,28 @@ header .dropdown:hover .dropdown-content {
   }
   #account .wrapper main form span {
     color: red;
+  }
+  #information .wrapper main {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 25% 60%;
+    grid-template-areas: "back maintext" "sidetext maintext" ". maintext";
+    display: grid;
+    width: 100vw;
+    height: 80vh;
+  }
+  #information .wrapper main a {
+    grid-area: back;
+  }
+  #information .wrapper main section {
+    grid-area: sidetext;
+  }
+  #information .wrapper main section div {
+    display: block;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+  }
+  #information .wrapper main section div:nth-child(3) {
+    grid-area: maintext;
   }
 }/*# sourceMappingURL=style.css.map */
