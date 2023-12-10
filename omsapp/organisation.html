@@ -4,35 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./js/organisation.js" defer></script>
     <title>omsApp</title>
 </head>
-<body>
+<body id="organisation">
     <div class="wrapper">
-    <header>
-        <h1>
-
-        </h1>
-        <nav>
-            <ul>
-                <li>
-                    <a  href="index.html">Aktiviteter</a>
-                </li>
-                <li>
-                    <a  href="week.html">Vecka</a>
-                </li>
-                <li>
-                    <a  href="month.html">Månad</a>
-                </li>
-                <li>
-                    <a href="logout.html">logga ut</a>
-                </li>
-            </ul>
-        </nav>
+        <header>
+            <h1>
+    
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a  href="index.html">Aktiviteter</a>
+                    </li>
+                    <li>
+                        <a  href="week.html">Vecka</a>
+                    </li>
+                    <li>
+                        <a  href="month.html">Månad</a>
+                    </li>
+                    <li>
+                        <a href="logout.html">logga ut</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="dropdown">
+                <button class="dropdown-btn">Meny</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Aktiviteter</a>
+                    <a href="week.html">Vecka</a>
+                    <a href="month.html">Månad</a>
+                    <a href="logout.html">Logga ut</a>
+                </div>
+            </div>
     </header>
     <main>
-        <div class="go-back">
-            <p onclick="history.back()">Gå tillbaka</p>
-        </div>
+        <a href="test">back</a>
         <div id="organisation-name"> 
             <h2></h2> 
         </div>

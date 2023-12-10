@@ -16,9 +16,12 @@ function init() {
         console.log(role);
     }
     let li = document.getElementById("account");
-
-
-    
+    let a = document.getElementsByTagName("a")[8];
+    console.log(a);
+    a.addEventListener("click" , event=>{
+        event.preventDefault();
+        history.back();
+    })
 }
 
 window.onload = init;
@@ -54,7 +57,6 @@ function createSection(element) {
     let position = document.getElementsByTagName("div")[4];
     let section = document.createElement("section");
     let main = document.getElementsByTagName("main")[0];
-
     let title = document.createElement("h3");
     let TN = document.createTextNode(element.org);
     title.appendChild(TN);
